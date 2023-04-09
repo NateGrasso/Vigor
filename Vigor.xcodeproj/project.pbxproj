@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCEFA17129E35B6300AF867E /* VigorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFA17029E35B6300AF867E /* VigorApp.swift */; };
+		DCEFA17329E35B6300AF867E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFA17229E35B6300AF867E /* ContentView.swift */; };
+		DCEFA17529E35B6400AF867E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCEFA17429E35B6400AF867E /* Assets.xcassets */; };
+		DCEFA17829E35B6400AF867E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCEFA17729E35B6400AF867E /* Preview Assets.xcassets */; };
+		DCEFA18229E35B6400AF867E /* VigorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFA18129E35B6400AF867E /* VigorTests.swift */; };
+		DCEFA18C29E35B6400AF867E /* VigorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFA18B29E35B6400AF867E /* VigorUITests.swift */; };
+		DCEFA18E29E35B6400AF867E /* VigorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFA18D29E35B6400AF867E /* VigorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCEFA17E29E35B6400AF867E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCEFA16529E35B6300AF867E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCEFA16C29E35B6300AF867E;
+			remoteInfo = Vigor;
+		};
+		DCEFA18829E35B6400AF867E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCEFA16529E35B6300AF867E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCEFA16C29E35B6300AF867E;
+			remoteInfo = Vigor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCEFA16D29E35B6300AF867E /* Vigor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vigor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCEFA17029E35B6300AF867E /* VigorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VigorApp.swift; sourceTree = "<group>"; };
+		DCEFA17229E35B6300AF867E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DCEFA17429E35B6400AF867E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCEFA17729E35B6400AF867E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCEFA17D29E35B6400AF867E /* VigorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VigorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCEFA18129E35B6400AF867E /* VigorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VigorTests.swift; sourceTree = "<group>"; };
+		DCEFA18729E35B6400AF867E /* VigorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VigorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCEFA18B29E35B6400AF867E /* VigorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VigorUITests.swift; sourceTree = "<group>"; };
+		DCEFA18D29E35B6400AF867E /* VigorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VigorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCEFA16A29E35B6300AF867E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEFA17A29E35B6400AF867E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEFA18429E35B6400AF867E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCEFA16429E35B6300AF867E = {
+			isa = PBXGroup;
+			children = (
+				DCEFA16F29E35B6300AF867E /* Vigor */,
+				DCEFA18029E35B6400AF867E /* VigorTests */,
+				DCEFA18A29E35B6400AF867E /* VigorUITests */,
+				DCEFA16E29E35B6300AF867E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCEFA16E29E35B6300AF867E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCEFA16D29E35B6300AF867E /* Vigor.app */,
+				DCEFA17D29E35B6400AF867E /* VigorTests.xctest */,
+				DCEFA18729E35B6400AF867E /* VigorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCEFA16F29E35B6300AF867E /* Vigor */ = {
+			isa = PBXGroup;
+			children = (
+				DCEFA17029E35B6300AF867E /* VigorApp.swift */,
+				DCEFA17229E35B6300AF867E /* ContentView.swift */,
+				DCEFA17429E35B6400AF867E /* Assets.xcassets */,
+				DCEFA17629E35B6400AF867E /* Preview Content */,
+			);
+			path = Vigor;
+			sourceTree = "<group>";
+		};
+		DCEFA17629E35B6400AF867E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DCEFA17729E35B6400AF867E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCEFA18029E35B6400AF867E /* VigorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCEFA18129E35B6400AF867E /* VigorTests.swift */,
+			);
+			path = VigorTests;
+			sourceTree = "<group>";
+		};
+		DCEFA18A29E35B6400AF867E /* VigorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCEFA18B29E35B6400AF867E /* VigorUITests.swift */,
+				DCEFA18D29E35B6400AF867E /* VigorUITestsLaunchTests.swift */,
+			);
+			path = VigorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCEFA16C29E35B6300AF867E /* Vigor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCEFA19129E35B6400AF867E /* Build configuration list for PBXNativeTarget "Vigor" */;
+			buildPhases = (
+				DCEFA16929E35B6300AF867E /* Sources */,
+				DCEFA16A29E35B6300AF867E /* Frameworks */,
+				DCEFA16B29E35B6300AF867E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vigor;
+			productName = Vigor;
+			productReference = DCEFA16D29E35B6300AF867E /* Vigor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCEFA17C29E35B6400AF867E /* VigorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCEFA19429E35B6400AF867E /* Build configuration list for PBXNativeTarget "VigorTests" */;
+			buildPhases = (
+				DCEFA17929E35B6400AF867E /* Sources */,
+				DCEFA17A29E35B6400AF867E /* Frameworks */,
+				DCEFA17B29E35B6400AF867E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCEFA17F29E35B6400AF867E /* PBXTargetDependency */,
+			);
+			name = VigorTests;
+			productName = VigorTests;
+			productReference = DCEFA17D29E35B6400AF867E /* VigorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCEFA18629E35B6400AF867E /* VigorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCEFA19729E35B6400AF867E /* Build configuration list for PBXNativeTarget "VigorUITests" */;
+			buildPhases = (
+				DCEFA18329E35B6400AF867E /* Sources */,
+				DCEFA18429E35B6400AF867E /* Frameworks */,
+				DCEFA18529E35B6400AF867E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCEFA18929E35B6400AF867E /* PBXTargetDependency */,
+			);
+			name = VigorUITests;
+			productName = VigorUITests;
+			productReference = DCEFA18729E35B6400AF867E /* VigorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCEFA16529E35B6300AF867E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DCEFA16C29E35B6300AF867E = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					DCEFA17C29E35B6400AF867E = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = DCEFA16C29E35B6300AF867E;
+					};
+					DCEFA18629E35B6400AF867E = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = DCEFA16C29E35B6300AF867E;
+					};
+				};
+			};
+			buildConfigurationList = DCEFA16829E35B6300AF867E /* Build configuration list for PBXProject "Vigor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCEFA16429E35B6300AF867E;
+			productRefGroup = DCEFA16E29E35B6300AF867E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCEFA16C29E35B6300AF867E /* Vigor */,
+				DCEFA17C29E35B6400AF867E /* VigorTests */,
+				DCEFA18629E35B6400AF867E /* VigorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCEFA16B29E35B6300AF867E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEFA17829E35B6400AF867E /* Preview Assets.xcassets in Resources */,
+				DCEFA17529E35B6400AF867E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEFA17B29E35B6400AF867E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEFA18529E35B6400AF867E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCEFA16929E35B6300AF867E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEFA17329E35B6300AF867E /* ContentView.swift in Sources */,
+				DCEFA17129E35B6300AF867E /* VigorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEFA17929E35B6400AF867E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEFA18229E35B6400AF867E /* VigorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEFA18329E35B6400AF867E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEFA18E29E35B6400AF867E /* VigorUITestsLaunchTests.swift in Sources */,
+				DCEFA18C29E35B6400AF867E /* VigorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCEFA17F29E35B6400AF867E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCEFA16C29E35B6300AF867E /* Vigor */;
+			targetProxy = DCEFA17E29E35B6400AF867E /* PBXContainerItemProxy */;
+		};
+		DCEFA18929E35B6400AF867E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCEFA16C29E35B6300AF867E /* Vigor */;
+			targetProxy = DCEFA18829E35B6400AF867E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DCEFA18F29E35B6400AF867E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCEFA19029E35B6400AF867E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCEFA19229E35B6400AF867E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vigor/Preview Content\"";
+				DEVELOPMENT_TEAM = 575J2B9GHH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com..Vigor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCEFA19329E35B6400AF867E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vigor/Preview Content\"";
+				DEVELOPMENT_TEAM = 575J2B9GHH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com..Vigor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DCEFA19529E35B6400AF867E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 575J2B9GHH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com..VigorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vigor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vigor";
+			};
+			name = Debug;
+		};
+		DCEFA19629E35B6400AF867E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 575J2B9GHH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com..VigorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vigor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vigor";
+			};
+			name = Release;
+		};
+		DCEFA19829E35B6400AF867E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 575J2B9GHH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com..VigorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vigor;
+			};
+			name = Debug;
+		};
+		DCEFA19929E35B6400AF867E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 575J2B9GHH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com..VigorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vigor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCEFA16829E35B6300AF867E /* Build configuration list for PBXProject "Vigor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEFA18F29E35B6400AF867E /* Debug */,
+				DCEFA19029E35B6400AF867E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCEFA19129E35B6400AF867E /* Build configuration list for PBXNativeTarget "Vigor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEFA19229E35B6400AF867E /* Debug */,
+				DCEFA19329E35B6400AF867E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCEFA19429E35B6400AF867E /* Build configuration list for PBXNativeTarget "VigorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEFA19529E35B6400AF867E /* Debug */,
+				DCEFA19629E35B6400AF867E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCEFA19729E35B6400AF867E /* Build configuration list for PBXNativeTarget "VigorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEFA19829E35B6400AF867E /* Debug */,
+				DCEFA19929E35B6400AF867E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCEFA16529E35B6300AF867E /* Project object */;
+}
