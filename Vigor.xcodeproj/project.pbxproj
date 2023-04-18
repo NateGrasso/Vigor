@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0D38CA29EE8AEE0059A0BC /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0D38C929EE8AEE0059A0BC /* LogIn.swift */; };
+		DC0D38CC29EE981A0059A0BC /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0D38CB29EE981A0059A0BC /* CreateAccount.swift */; };
+		DC0D38CF29EF301E0059A0BC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0D38CE29EF301E0059A0BC /* String.swift */; };
 		DCEFA17129E35B6300AF867E /* VigorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFA17029E35B6300AF867E /* VigorApp.swift */; };
 		DCEFA17329E35B6300AF867E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFA17229E35B6300AF867E /* ContentView.swift */; };
 		DCEFA17529E35B6400AF867E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCEFA17429E35B6400AF867E /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC0D38C929EE8AEE0059A0BC /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		DC0D38CB29EE981A0059A0BC /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
+		DC0D38CE29EF301E0059A0BC /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		DCEFA16D29E35B6300AF867E /* Vigor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vigor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEFA17029E35B6300AF867E /* VigorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VigorApp.swift; sourceTree = "<group>"; };
 		DCEFA17229E35B6300AF867E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +77,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC0D38C829EE8AAA0059A0BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC0D38C929EE8AEE0059A0BC /* LogIn.swift */,
+				DC0D38CB29EE981A0059A0BC /* CreateAccount.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC0D38CD29EF2FD00059A0BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC0D38CE29EF301E0059A0BC /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DCEFA16429E35B6300AF867E = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +117,8 @@
 		DCEFA16F29E35B6300AF867E /* Vigor */ = {
 			isa = PBXGroup;
 			children = (
+				DC0D38CD29EF2FD00059A0BC /* Extensions */,
+				DC0D38C829EE8AAA0059A0BC /* Views */,
 				DCEFA17029E35B6300AF867E /* VigorApp.swift */,
 				DCEFA17229E35B6300AF867E /* ContentView.swift */,
 				DCEFA17429E35B6400AF867E /* Assets.xcassets */,
@@ -258,7 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCEFA17329E35B6300AF867E /* ContentView.swift in Sources */,
+				DC0D38CA29EE8AEE0059A0BC /* LogIn.swift in Sources */,
+				DC0D38CF29EF301E0059A0BC /* String.swift in Sources */,
 				DCEFA17129E35B6300AF867E /* VigorApp.swift in Sources */,
+				DC0D38CC29EE981A0059A0BC /* CreateAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
