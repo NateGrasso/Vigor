@@ -11,7 +11,6 @@
 		DC0D38CC29EE981A0059A0BC /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0D38CB29EE981A0059A0BC /* CreateAccount.swift */; };
 		DC0D38CF29EF301E0059A0BC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0D38CE29EF301E0059A0BC /* String.swift */; };
 		DC2C4F1C29F1EEE80018F956 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2C4F1B29F1EEE80018F956 /* AuthView.swift */; };
-		DC428C9629F217DF00306C0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC428C9529F217DF00306C0E /* GoogleService-Info.plist */; };
 		DC428C9929F219D300306C0E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DC428C9829F219D300306C0E /* FirebaseAuth */; };
 		DC428C9B29F219D300306C0E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DC428C9A29F219D300306C0E /* FirebaseFirestore */; };
 		DCEFA17129E35B6300AF867E /* VigorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFA17029E35B6300AF867E /* VigorApp.swift */; };
@@ -45,7 +44,6 @@
 		DC0D38CB29EE981A0059A0BC /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
 		DC0D38CE29EF301E0059A0BC /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		DC2C4F1B29F1EEE80018F956 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		DC428C9529F217DF00306C0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DCEFA16D29E35B6300AF867E /* Vigor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vigor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEFA17029E35B6300AF867E /* VigorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VigorApp.swift; sourceTree = "<group>"; };
 		DCEFA17229E35B6300AF867E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 		DCEFA16F29E35B6300AF867E /* Vigor */ = {
 			isa = PBXGroup;
 			children = (
-				DC428C9529F217DF00306C0E /* GoogleService-Info.plist */,
 				DC0D38CD29EF2FD00059A0BC /* Extensions */,
 				DC0D38C829EE8AAA0059A0BC /* Views */,
 				DCEFA17029E35B6300AF867E /* VigorApp.swift */,
@@ -275,7 +272,6 @@
 			files = (
 				DCEFA17829E35B6400AF867E /* Preview Assets.xcassets in Resources */,
 				DCEFA17529E35B6400AF867E /* Assets.xcassets in Resources */,
-				DC428C9629F217DF00306C0E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
