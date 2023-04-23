@@ -9,8 +9,8 @@ import SwiftUI
 import FirebaseAuth
 
 struct CreateAccount: View {
-    @Binding var currentShowingView: String
-    
+        @Binding var currentShowingView: String
+        @AppStorage("uid") var userID: String = ""
         @State private var email: String = ""
         @State private var password: String = ""
         private func isValidPassword(_ password: String)-> Bool {
@@ -104,6 +104,7 @@ struct CreateAccount: View {
                             
                             if let authResult = authResult{
                                 print(authResult.user.uid)
+                                userID = authResult.user.uid
                             }
                         }
                         

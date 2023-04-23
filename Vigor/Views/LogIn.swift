@@ -10,9 +10,11 @@ import FirebaseAuth
 
 struct LogIn: View {
     @Binding var currentShowingView: String
+    @AppStorage("uid") var userID: String = ""
 
     @State private var email: String = ""
     @State private var password: String = ""
+    
     private func isValidPassword(_ password: String)-> Bool {
         // minimum 8 characters long
         // 1 uppercase character
@@ -107,6 +109,10 @@ struct LogIn: View {
                         
                         if let authResult = authResult{
                             print(authResult.user.uid)
+                            withAnimation{
+                                userID = authResult.user.uid
+                                
+                            }
                         }
                     }
                     
