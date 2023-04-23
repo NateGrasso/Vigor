@@ -1,13 +1,16 @@
 //
 //  CreateAccount.swift
 //  Vigor
-//
+//  Create account view for new users to create an account using an email and password.
 //  Created by Nathan Grasso on 4/18/23.
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct CreateAccount: View {
+    @Binding var currentShowingView: String
+    
         @State private var email: String = ""
         @State private var password: String = ""
         private func isValidPassword(_ password: String)-> Bool {
@@ -79,20 +82,33 @@ struct CreateAccount: View {
                     
                     .padding()
                     
-                    Text("Dont have an account?")
-                    
-                        .padding(.bottom)
-                    
-                    Button(action: {}){
-                        Text("Create Account")
+                    Button(action: {
+                        withAnimation {
+                            self.currentShowingView = "LogIn"
+                        }
+                    }){
+                        Text("Already have an account?")
                             .foregroundColor(.black)
                             .bold()
                     }
                     Spacer()
                     
                     Button{
+                        
+                        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                            
+                            if let error = error{
+                                print(error)
+                                return
+                            }
+                            
+                            if let authResult = authResult{
+                                print(authResult.user.uid)
+                            }
+                        }
+                        
                     } label: {
-                        Text("Sign In")
+                        Text("Create Account")
                             .foregroundColor(.white)
                             .font(.title)
                             .bold()
@@ -110,9 +126,3 @@ struct CreateAccount: View {
             }
         }
     }
-
-struct CreateAccount_Previews: PreviewProvider {
-    static var previews: some View {
-        CreateAccount()
-    }
-}

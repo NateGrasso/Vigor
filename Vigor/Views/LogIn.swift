@@ -1,13 +1,16 @@
 //
 //  LogIn.swift
 //  Vigor
-//
+//  Log in view for account log in.
 //  Created by Nathan Grasso on 4/18/23.
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct LogIn: View {
+    @Binding var currentShowingView: String
+
     @State private var email: String = ""
     @State private var password: String = ""
     private func isValidPassword(_ password: String)-> Bool {
@@ -83,7 +86,11 @@ struct LogIn: View {
                 
                     .padding(.bottom)
                 
-                Button(action: {}){
+                Button(action: {
+                    withAnimation {
+                        self.currentShowingView = "CreateAccount"
+                    }
+                }){
                     Text("Create Account")
                         .foregroundColor(.black)
                         .bold()
@@ -91,6 +98,18 @@ struct LogIn: View {
                 Spacer()
                 
                 Button{
+                    
+                    Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                        if let error = error{
+                            print(error)
+                            return
+                        }
+                        
+                        if let authResult = authResult{
+                            print(authResult.user.uid)
+                        }
+                    }
+                    
                 } label: {
                 Text("Sign In")
                         .foregroundColor(.white)
@@ -111,8 +130,4 @@ struct LogIn: View {
     }
 }
 
-struct LogIn_Previews: PreviewProvider {
-    static var previews: some View {
-        LogIn()
-    }
-}
+

@@ -1,7 +1,7 @@
 //
 //  String.swift
 //  Vigor
-//
+//  File for vaildation of email using regular expression.
 //  Created by Nathan Grasso on 4/18/23.
 //
 
