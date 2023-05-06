@@ -14,6 +14,9 @@
 		DC428C9929F219D300306C0E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DC428C9829F219D300306C0E /* FirebaseAuth */; };
 		DC428C9B29F219D300306C0E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DC428C9A29F219D300306C0E /* FirebaseFirestore */; };
 		DC428C9F29F5CF2400306C0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC428C9E29F5CF2400306C0E /* GoogleService-Info.plist */; };
+		DC73490A29F5FCEF004F5BBE /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC73490929F5FCEF004F5BBE /* WorkoutView.swift */; };
+		DC73490D29FEF05B004F5BBE /* Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC73490C29FEF05B004F5BBE /* Workouts.swift */; };
+		DC73490F29FEF10D004F5BBE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC73490E29FEF10D004F5BBE /* ViewModel.swift */; };
 		DCEFA17129E35B6300AF867E /* VigorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFA17029E35B6300AF867E /* VigorApp.swift */; };
 		DCEFA17329E35B6300AF867E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFA17229E35B6300AF867E /* ContentView.swift */; };
 		DCEFA17529E35B6400AF867E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCEFA17429E35B6400AF867E /* Assets.xcassets */; };
@@ -46,6 +49,9 @@
 		DC0D38CE29EF301E0059A0BC /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		DC2C4F1B29F1EEE80018F956 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		DC428C9E29F5CF2400306C0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC73490929F5FCEF004F5BBE /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		DC73490C29FEF05B004F5BBE /* Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workouts.swift; sourceTree = "<group>"; };
+		DC73490E29FEF10D004F5BBE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		DCEFA16D29E35B6300AF867E /* Vigor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vigor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEFA17029E35B6300AF867E /* VigorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VigorApp.swift; sourceTree = "<group>"; };
 		DCEFA17229E35B6300AF867E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +97,7 @@
 				DC0D38C929EE8AEE0059A0BC /* LogIn.swift */,
 				DC0D38CB29EE981A0059A0BC /* CreateAccount.swift */,
 				DC2C4F1B29F1EEE80018F956 /* AuthView.swift */,
+				DC73490929F5FCEF004F5BBE /* WorkoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -99,8 +106,17 @@
 			isa = PBXGroup;
 			children = (
 				DC0D38CE29EF301E0059A0BC /* String.swift */,
+				DC73490C29FEF05B004F5BBE /* Workouts.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DC73490B29FEEE1F004F5BBE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DC73490E29FEF10D004F5BBE /* ViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		DCEFA16429E35B6300AF867E = {
@@ -128,6 +144,7 @@
 			children = (
 				DC428C9E29F5CF2400306C0E /* GoogleService-Info.plist */,
 				DC0D38CD29EF2FD00059A0BC /* Extensions */,
+				DC73490B29FEEE1F004F5BBE /* ViewModels */,
 				DC0D38C829EE8AAA0059A0BC /* Views */,
 				DCEFA17029E35B6300AF867E /* VigorApp.swift */,
 				DCEFA17229E35B6300AF867E /* ContentView.swift */,
@@ -300,12 +317,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC73490A29F5FCEF004F5BBE /* WorkoutView.swift in Sources */,
+				DC73490F29FEF10D004F5BBE /* ViewModel.swift in Sources */,
 				DCEFA17329E35B6300AF867E /* ContentView.swift in Sources */,
 				DC0D38CA29EE8AEE0059A0BC /* LogIn.swift in Sources */,
 				DC2C4F1C29F1EEE80018F956 /* AuthView.swift in Sources */,
 				DC0D38CF29EF301E0059A0BC /* String.swift in Sources */,
 				DCEFA17129E35B6300AF867E /* VigorApp.swift in Sources */,
 				DC0D38CC29EE981A0059A0BC /* CreateAccount.swift in Sources */,
+				DC73490D29FEF05B004F5BBE /* Workouts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
