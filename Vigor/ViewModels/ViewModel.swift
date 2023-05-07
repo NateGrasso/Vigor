@@ -12,6 +12,33 @@ class ViewWorkouts: ObservableObject{
     
     @Published var list = [Workouts]()
     
+    func deleteData(workoutToDelete: Workouts){
+        
+        //Get a reference to the data base
+        let db = Firestore.firestore()
+        
+        //Specify data(document) to delete
+        db.collection("Workouts").document(workoutToDelete.id).delete { error in
+            
+            //Check if document was deleted
+            if error == nil{
+                //No errors
+                
+                //Update UI from the main thread
+                DispatchQueue.main.async{
+                    
+                    //Remove Workout that was just deleted
+                    self.list.removeAll{Workouts in
+                        
+                        //check for the workout to remove
+                        return Workouts.id == workoutToDelete.id
+                    }
+                }
+                
+            }
+        }
+    }
+    
     func addData(Date: String, Exercise: String, Set: String, Reps: String, Weight: String){
         
         //Get a reference to the data base

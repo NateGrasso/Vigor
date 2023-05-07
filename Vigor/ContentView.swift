@@ -46,22 +46,34 @@ struct ContentView: View {
         }
         VStack{
             List (model.list) {item in
+                
                 HStack{
                     Text("Date:")
                     Text(item.Date)
+                    Spacer()
+                    Button(action: {
+                        //Delete item from database
+                        model.deleteData(workoutToDelete: item)
+                    }, label: {
+                        Image(systemName: "minus.circle")
+                    })
                 }
+                
                 HStack{
                     Text("Exercise:")
                     Text(item.Exercise)
                 }
+                
                 HStack{
                     Text("Set:")
                     Text(item.Set)
                 }
+                
                 HStack{
                     Text("Reps:")
                     Text(item.Reps)
                 }
+                
                 HStack{
                     Text("Weight:")
                     Text(item.Weight)
