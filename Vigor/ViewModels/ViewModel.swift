@@ -12,6 +12,28 @@ class ViewWorkouts: ObservableObject{
     
     @Published var list = [Workouts]()
     
+    func addData(Date: String, Exercise: String, Set: String, Reps: String, Weight: String){
+        
+        //Get a reference to the data base
+        let db = Firestore.firestore()
+        
+        //Add a document to the collection
+        db.collection("Workouts").addDocument(data: ["Date":Date, "Exercise":Exercise, "Set":Set, "Reps":Reps, "Weight":Weight]){
+            error in
+            
+            //Check for error
+            if error == nil{
+                //no errors
+                
+                //Call get data to retrieve latest data
+                self.getData()
+            }
+            else{
+                //handle error
+            }
+        }
+    }
+    
     func getData(){
         
         //Get a reference to the database
